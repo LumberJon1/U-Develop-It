@@ -36,7 +36,7 @@ router.get('/voter/:id', (req, res) => {
 });
 
 //Post route
-router.post("/api/voter", ({body}, res) => {
+router.post("/voter", ({body}, res) => {
 
     //Validate incoming data
     const errors = inputCheck(body, "first_name", "last_name", "email");
